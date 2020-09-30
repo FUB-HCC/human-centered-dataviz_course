@@ -4,8 +4,6 @@
 
 In order to take part in the course, please ensure that you have a Python version greater or equal to 3.6.1 , a working installation of [Poetry](https://python-poetry.org/docs/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed.
 
-The setup below is designed for \*nix systems, so on Windows you may be well advised to use the Linux subsystem for the setup. [Here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) is a guide how to install the WSL.
-
 ## Setup
 
 1. Clone this repository and move into the repo root
