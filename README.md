@@ -34,3 +34,8 @@ poetry run jupyter lab
 7. If you arrived at this point and have no major warnings or errors popping up, you are ready for our course :)
 
 For further information concerning Poetry, you may consult [this guide](https://python-poetry.org/docs/cli/).
+
+If you have problems installing Poetry and can't make it run, it is also possible (although bad style) to install the necessary packages globally by executing
+```
+pip3 install --user altair pandas numpy jupyterlab
+```
