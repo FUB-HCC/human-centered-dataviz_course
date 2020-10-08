@@ -4,8 +4,6 @@
 
 In order to take part in the course, please ensure that you have a Python version greater or equal to 3.6.1 , a working installation of [Poetry](https://python-poetry.org/docs/) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed.
 
-The setup below is designed for \*nix systems, so on Windows you may be well advised to use the Linux subsystem for the setup.
-
 ## Setup
 
 1. Clone this repository and move into the repo root
@@ -36,3 +34,8 @@ poetry run jupyter lab
 7. If you arrived at this point and have no major warnings or errors popping up, you are ready for our course :)
 
 For further information concerning Poetry, you may consult [this guide](https://python-poetry.org/docs/cli/).
+
+If you have problems installing Poetry and can't make it run, it is also possible (although bad style) to install the necessary packages globally by executing
+```
+pip3 install --user altair pandas numpy jupyterlab
+```
