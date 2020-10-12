@@ -8,6 +8,8 @@ authors = ["Tim Korjakow <tim.korjakow@campus.tu-berlin.de>"]
 python = "^3.6.1"
 altair = "^4.1.0"
 jupyterlab = "^2.2.8"
+networkx = "^2.5"
+nx_altair = "^0.1.6"
 
 [tool.poetry.dev-dependencies]
 
