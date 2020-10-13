@@ -10,6 +10,7 @@ altair = "^4.1.0"
 jupyterlab = "^2.2.8"
 networkx = "^2.5"
 nx_altair = "^0.1.6"
+vega-datasets = "^0.8.0"
 
 [tool.poetry.dev-dependencies]
 
