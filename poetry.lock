@@ -460,6 +460,30 @@ version = "1.4.1"
 
 [[package]]
 category = "main"
+description = "Python package for creating and manipulating graphs and networks"
+name = "networkx"
+optional = false
+python-versions = ">=3.6"
+version = "2.5"
+
+[package.dependencies]
+decorator = ">=4.3.0"
+
+[package.extras]
+all = ["numpy", "scipy", "pandas", "matplotlib", "pygraphviz", "pydot", "pyyaml", "lxml", "pytest"]
+gdal = ["gdal"]
+lxml = ["lxml"]
+matplotlib = ["matplotlib"]
+numpy = ["numpy"]
+pandas = ["pandas"]
+pydot = ["pydot"]
+pygraphviz = ["pygraphviz"]
+pytest = ["pytest"]
+pyyaml = ["pyyaml"]
+scipy = ["scipy"]
+
+[[package]]
+category = "main"
 description = "A web-based notebook environment for interactive computing"
 name = "notebook"
 optional = false
@@ -493,6 +517,19 @@ name = "numpy"
 optional = false
 python-versions = ">=3.6"
 version = "1.19.2"
+
+[[package]]
+category = "main"
+description = "Draw NetworkX graphs with Altair"
+name = "nx-altair"
+optional = false
+python-versions = ">=3.3.0"
+version = "0.1.6"
+
+[package.dependencies]
+altair = "*"
+networkx = "*"
+pandas = "*"
 
 [[package]]
 category = "main"
@@ -774,6 +811,17 @@ socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
 
 [[package]]
 category = "main"
+description = "A Python package for offline access to Vega datasets"
+name = "vega-datasets"
+optional = false
+python-versions = "*"
+version = "0.8.0"
+
+[package.dependencies]
+pandas = "*"
+
+[[package]]
+category = "main"
 description = "Measures the displayed width of unicode strings in a terminal"
 name = "wcwidth"
 optional = false
@@ -802,7 +850,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,<3.7.3 || >3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [metadata]
-content-hash = "ed7e516abc944c6382bd3afbfe1a4b2bf2b15e0a069546ffd36987c3a1c6699f"
+content-hash = "ae22aa056e2184c25443f24c6bf7ec7bc2c34f36b1e33f2972bc98a3b7bae63a"
 python-versions = "^3.6.1"
 
 [metadata.files]
@@ -1021,6 +1069,10 @@ nest-asyncio = [
     {file = "nest_asyncio-1.4.1-py3-none-any.whl", hash = "sha256:a4487c4f49f2d11a7bb89a512a6886b6a5045f47097f49815b2851aaa8599cf0"},
     {file = "nest_asyncio-1.4.1.tar.gz", hash = "sha256:b86c3193abda5b2eeccf8c79894bc71c680369a178f4b068514ac00720b14e01"},
 ]
+networkx = [
+    {file = "networkx-2.5-py3-none-any.whl", hash = "sha256:8c5812e9f798d37c50570d15c4a69d5710a18d77bafc903ee9c5fba7454c616c"},
+    {file = "networkx-2.5.tar.gz", hash = "sha256:7978955423fbc9639c10498878be59caf99b44dc304c2286162fd24b458c1602"},
+]
 notebook = [
     {file = "notebook-6.1.4-py3-none-any.whl", hash = "sha256:07b6e8b8a61aa2f780fe9a97430470485bc71262bc5cae8521f1441b910d2c88"},
     {file = "notebook-6.1.4.tar.gz", hash = "sha256:687d01f963ea20360c0b904ee7a37c3d8cda553858c8d6e33fd0afd13e89de32"},
@@ -1052,6 +1104,10 @@ numpy = [
     {file = "numpy-1.19.2-cp38-cp38-win_amd64.whl", hash = "sha256:1669ec8e42f169ff715a904c9b2105b6640f3f2a4c4c2cb4920ae8b2785dac65"},
     {file = "numpy-1.19.2-pp36-pypy36_pp73-manylinux2010_x86_64.whl", hash = "sha256:0bfd85053d1e9f60234f28f63d4a5147ada7f432943c113a11afcf3e65d9d4c8"},
     {file = "numpy-1.19.2.zip", hash = "sha256:0d310730e1e793527065ad7dde736197b705d0e4c9999775f212b03c44a8484c"},
+]
+nx-altair = [
+    {file = "nx_altair-0.1.6-py3-none-any.whl", hash = "sha256:737c960598b405ed88882c3f1e9a0237ae4e5ba245380c8d0ec2c29fba9f1a38"},
+    {file = "nx_altair-0.1.6.tar.gz", hash = "sha256:17c5ba760251fc17ab49e786e93c8820fcefbe1cb2f539886651265cbdb52c63"},
 ]
 packaging = [
     {file = "packaging-20.4-py2.py3-none-any.whl", hash = "sha256:998416ba6962ae7fbd6596850b80e17859a5753ba17c32284f67bfff33784181"},
@@ -1223,6 +1279,10 @@ traitlets = [
 urllib3 = [
     {file = "urllib3-1.25.10-py2.py3-none-any.whl", hash = "sha256:e7983572181f5e1522d9c98453462384ee92a0be7fac5f1413a1e35c56cc0461"},
     {file = "urllib3-1.25.10.tar.gz", hash = "sha256:91056c15fa70756691db97756772bb1eb9678fa585d9184f24534b100dc60f4a"},
+]
+vega-datasets = [
+    {file = "vega_datasets-0.8.0-py2.py3-none-any.whl", hash = "sha256:ffc7debd6dcdccd57fb44b5efb4764c8a443673c2a83b58e2a4ee9f7faa35b85"},
+    {file = "vega_datasets-0.8.0.tar.gz", hash = "sha256:db8883dab72b6f414e1fafdbf1e8db7543bba6ed77912a4e0c197d74fcfa1c20"},
 ]
 wcwidth = [
     {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
