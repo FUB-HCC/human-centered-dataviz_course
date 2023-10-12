@@ -9,8 +9,8 @@ In order to take part in the course, please ensure that you have a Python versio
 1. Clone this repository and move it into the repo root
 
 ```
-git clone https://github.com/wittenator/dataviz_course_2020.git
-cd dataviz_course_2020
+git clone git clone https://github.com/FUB-HCC/human-centered-dataviz_course.git
+cd human-centered-dataviz_course
 ```
 
 2. Install the dependencies in the repo root
@@ -25,7 +25,7 @@ poetry install
 poetry run jupyter lab
 ```
 
-4. If the Juypterlab interface does not appear in an opened web browser, follow the instructions which are printed in the terminal.
+4. If the Juypterlab interface does not appear in an opened web browser, follow the instructions that are printed in the terminal.
 
 5. Once you are able to open the interface, open the introductory notebook `Hello.ipynb` by selecting it in the left column and double-clicking.
 
